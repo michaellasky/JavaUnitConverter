@@ -11,7 +11,6 @@ public class UnitConverter {
 
     public interface Length extends Dimension {}
     public interface Mass extends Dimension {}
-    public interface Time extends Dimension {}
 
     // BigDecimal instantiates cleaner with strings.
     // "1.5" stays 1.5, not 1.4999999999999...
@@ -76,14 +75,6 @@ public class UnitConverter {
     }
 
     public static <T extends Mass> BigDecimal convert (
-            BigDecimal num,
-            T fromType,
-            T toType)
-    {
-        return unsafeConvert(num, fromType, toType);
-    }
-
-    public static <T extends Time> BigDecimal convert (
             BigDecimal num,
             T fromType,
             T toType)
