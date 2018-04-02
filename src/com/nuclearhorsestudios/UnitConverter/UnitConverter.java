@@ -90,7 +90,6 @@ public class UnitConverter {
             T fromType,
             T toType)
     {
-        RoundingMode mode = RoundingMode.HALF_EVEN;
         BigDecimal inBaseUnit = num.multiply(fromType.getMultiplier());
         BigDecimal mult = toType.getMultiplier();
 
