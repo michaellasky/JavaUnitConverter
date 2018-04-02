@@ -1,5 +1,5 @@
 # JavaUnitConverter
-A quick and dirty unit converter for javascript that enforces unit dimensionality (ie: cannot convert Meters to Kilograms) 
+A quick and dirty unit converter for java that enforces unit dimensionality (ie: cannot convert Meters to Kilograms) 
 
 Other solutions tend to be rediculously complex for when you just want to convert meters to feet, etc.  This is approx 100 LOC, and can be extended pretty easily.  
 
